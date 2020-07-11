@@ -1,0 +1,604 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header{
+	min-height: 700px;
+	width: 100%;
+	height: 90vh;
+	padding: 40px 2%;
+	max-height 800px;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../imagens/capa.png");
+	text-align: center;
+}
+
+header nav {
+	float: right;
+}
+
+
+/*MENU MOBILE*/
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../imagens/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 75px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: #ccc;
+}
+
+nav.mobile-menu ul li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*LOGOTIPO*/
+
+header .logo{
+	width:260px;
+	height:32px;
+	float: left;
+	background-image: url("../imagens/logo-danki.png");
+	background-position: center;
+	background-size: cover;
+}
+
+
+/*MENU PRINCIPAL*/
+
+header nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	padding: 0 20px;
+}
+
+header nav.desktop-menu li a{
+	text-decoration: none;
+	color: white;
+}
+
+header nav.desktop-menu li a:hover{
+	text-decoration: underline;
+}
+
+.chamada-1{
+	margin: 100px 50px;
+}
+
+.chamada-1 h2{
+	color: white;
+	font-size: 55px;
+	font-weight: bold;
+	text-shadow: 5px 5px black;
+}
+
+.chamada-1 p{
+	color: white;
+	font-weight: normal;
+	font-size: 20px;
+	padding-top: 40px;
+}
+
+section.sessao1{
+	width: 100%;
+	height: 360px;
+	background-color: #472562;
+	padding: 0 2%;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+	height: calc(100% + 30px);
+}
+
+.texto-sessao1{
+	float: left;
+	color: white;
+	width: 50%;
+	position: relative;
+	left: 45px;
+	margin-top: 30px;
+	padding-left: 80px;
+}
+
+.texto-sessao1 h2{
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.texto-sessao1 p{
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.texto-sessao1 ul{
+	font-size: 15px;
+	list-style-position: inside;
+}
+
+.texto-sessao1 ul li{
+	margin-top: 8px;
+	float: left;
+	width: 100%;
+}
+
+.btn1-texto{
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	color: white;
+	cursor: pointer;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 30px;
+}
+
+.device-sessao1{
+	position: relative;
+	float: left;
+	margin-top: -40px;
+	width: 50%;
+	height: 400px;
+	background-image: url('../imagens/device.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.sessao2{
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: lightgray;
+	text-align: center;
+	position: relative;
+}
+
+.sessao2 .container{
+	max-width: 1000px;
+	align-items: center;
+}
+
+.sessao2 h2{
+	padding-top: 20px;
+	color: #472663;
+	font-weight: 300;
+}
+
+.sessao2 p{
+	display: inline-block;
+	margin-top: 30px;
+	max-width: 800px;
+}
+
+.sessao2 .test{
+	position: relative;
+	display: inline-block;
+	width: 70%;
+	height: 350px;
+	margin: 2%;
+}
+
+.sessao2 iframe{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #472663;
+}
+
+.sessao3{
+	width: 100%;
+}
+
+.part1{
+	color: white;
+	float: left;
+	width: 50%;
+	padding: 140px 0 90px 0;
+	background-color: #835FA7;
+}
+
+.wraper-part1{
+	max-width: 600px;
+	float: right;
+	padding: 0 30px;
+}
+
+.part1 h2{
+	font-weight:300;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.part1 p{
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.part2{
+	position: relative;
+	float: left;
+	width: 50%;
+	padding: 140px 0 90px 0;
+}
+
+.sobre-autor{
+	display: none;
+	float: left;
+	max-width: 600px;
+	padding-left: 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	float: left;
+}
+
+.titulo-autor h2{
+	color: #232323;
+	font-weight: 400;
+	font-size: 25px;
+	padding-right: 20px;
+}
+
+.titulo-autor p{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 13px;
+	color: #232323;
+}
+
+.titulo-autor .img-autor1{
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -5px;
+	border-radius: 25px;
+	background-image: url("../imagens/img1.jpg");
+	background-size: 100% 100%;
+}
+
+.titulo-autor .img-autor2{
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -5px;
+	border-radius: 25px;
+	background-image: url("../imagens/img2.jpg");
+	background-size: 100% 100%;
+}
+
+.titulo-autor .img-autor3{
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -5px;
+	border-radius: 25px;
+	background-image: url("../imagens/img3.png");
+	background-size: 100% 100%;
+}
+
+
+.texto-autor{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.texto-autor p{
+	line-height: 30px;
+	color: #232323;
+}
+
+.slider-bullets{
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top: 12px;
+}
+
+.slider-bullets span{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	float: left;
+	background-color: rgb(200,200,200);
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+section.sessao4{
+	background-color: #472563;
+	padding: 100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding-right: 10px;
+}
+
+.form form input[type=text]{
+	width: 90%;
+	max-width: 480px;
+	margin-top: 5px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border: 1px solid rgb(200,200,200);
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form textarea{
+	width: 90%;
+	max-width: 480px;
+	padding: 15px;
+	margin-top: 8px;
+	border: 1px solid rgb(200,200,200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	background-color:  #FF703D;
+	display: block;
+	width: 165px;
+	height: 44px;
+	color: white;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 0;
+	margin: 15px auto;
+}
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	color: white;
+	padding: 0 10px;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top: 10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.map{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border: 5px solid gray;
+}
+
+footer{
+	padding: 40px 2%;
+	background: #192123;
+	color: white;
+	text-align: center;
+}
+
+footer p{
+	margin: 0 auto;
+	margin-top: 8px; 
+}
+
+@media screen and (max-width: 768px){
+
+	nav.desktop-menu{
+		display: none;
+	}
+
+	nav.mobile-menu{
+		display: block;
+	}
+
+	#menuMobile{
+		display: none;
+	}
+
+	.chamada-1{
+		width: 100%;
+		float: none;
+		margin: 100px 0;
+		text-align: center;
+	}
+
+	.chamada-1 h2{
+		font-size: 40px;
+		font-weight: bold;
+		text-shadow: 5px 5px black;
+		padding: 0 10px;
+	}
+
+	.chamada-1 p{
+		color: white;
+		font-weight: normal;
+		font-size: 20px;
+	}
+
+	section.sessao1{
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+
+	.texto-sessao1{
+		width: 100%;
+		margin-top: 0;
+		padding-left: 0;
+		position: static;
+		float: none;
+		display: inline-block;
+	}
+
+	.texto-sessao1 ul{
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.texto-sessao1 ul li{
+		float: none;
+		text-align: left;
+	}
+
+	.btn1-texto{
+		display: inline-block;
+	}
+
+	.device-sessao1{
+		display: none;
+	}
+
+	.sessao2 {
+		padding-top: 40px;
+	}
+
+	.map-wraper{
+		float: none;
+		width: 100%;
+		margin-top: 40px;
+		padding: 0 4%;
+	}
+
+	.form{
+		float: none;
+		width: 100%;
+	}
+
+	.form p{
+		display: inline-block;
+	}
+
+	section.sessao4 .container{
+		text-align: center;
+	}
+
+	.map-wraper3{
+		display: inline-block;
+		margin-top: 10px;
+		width: 80%;
+		padding-top: 80%;
+		max-width: none;
+		position: relative;
+	}
+
+	.map-wraper2{
+		position: absolute;
+		padding-top: 0;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.sessao2 .test{
+		width: 90%;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	.sessao2 img{
+		top: 0px;
+		margin-top: 20px;
+	}
+
+	.part1{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.part2{
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+}
